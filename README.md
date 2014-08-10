@@ -6,7 +6,7 @@ A plugin to turn any integer field into a currency, great for keeping accuracy o
 To use it, add it to your Gemfile:
 
 ```ruby
-gem 'acts-as-taggable-on', github: 'mesbahmilad/acts_as_currency' 
+gem 'acts_as_currency', github: 'mesbahmilad/acts_as_currency' 
 ```
 
 and bundle:
