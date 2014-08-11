@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ActsAsCurrency::VERSION
   s.authors     = ["Milad Mesbah"]
   s.email       = ["milad@pendarlabs.com"]
-  s.homepage    = "www.pendarlabs.com"
+  s.homepage    = "http://www.pendarlabs.com"
   s.summary     = "A plugin to turn any integer field into a currency, great for keeping accuracy on the fields."
   s.description = "Not much"
 
@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
+
+  s.add_dependency 'sprockets', '2.11.0'
 
   s.add_development_dependency "rspec"
   s.add_development_dependency "sqlite3"
