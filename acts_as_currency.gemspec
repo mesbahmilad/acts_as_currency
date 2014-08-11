@@ -7,11 +7,11 @@ require "acts_as_currency/version"
 Gem::Specification.new do |s|
   s.name        = "acts_as_currency"
   s.version     = ActsAsCurrency::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActsAsCurrency."
-  s.description = "TODO: Description of ActsAsCurrency."
+  s.authors     = ["Milad Mesbah"]
+  s.email       = ["milad@pendarlabs.com"]
+  s.homepage    = "www.pendarlabs.com"
+  s.summary     = "A plugin to turn any integer field into a currency, great for keeping accuracy on the fields."
+  s.description = "Not much"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
