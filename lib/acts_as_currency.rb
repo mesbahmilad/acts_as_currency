@@ -19,7 +19,7 @@ module ActsAsCurrency
       self.currency_options[:fields].each do |field|
         self.class.send(:define_method, field, proc{return read_attribute(field).nil? ? 0 : read_attribute(field)/100.0})
         self.class.send :define_method, "#{field}=" do |value|
-          write_attribute(field, value.to_d*100)
+          write_attribute(field, (value.to_d*100).to_i)
         end
       end
       super
