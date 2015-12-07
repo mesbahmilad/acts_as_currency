@@ -17,9 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails"
-
-  s.add_dependency 'sprockets', '2.11.0'
-
+  
   s.add_development_dependency "rspec"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "meta_request"
