@@ -11,9 +11,9 @@ module ActsAsCurrency
       class_attribute :currency_options
       self.currency_options = configuration
       self.currency_options[:fields].each do |field|
-        define_method(field, proc{return read_attribute(field).nil? ? 0 : read_attribute(field)/100.0})
+        define_method(field, proc { return read_attribute(field).nil? ? 0 : Rational(read_attribute(field), 100).to_f })
         define_method("#{field}=") do |value|
-          write_attribute(field, (value.to_d*100).to_i)
+          write_attribute(field, (Rational(value) * 100).to_i)
         end
       end
       include ActsAsCurrency::LocalInstanceMethods
